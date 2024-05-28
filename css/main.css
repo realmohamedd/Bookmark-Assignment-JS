@@ -1,0 +1,99 @@
+*::selection{
+    background-color: #FEc260;
+}
+body{
+    background-color: #f7EcDE;
+}
+.bookmark .head h1{
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+   
+}
+.bookmark .center-head {
+    
+    display: flex;
+    justify-content: center;
+}
+.bookmark .center-head .head{
+    position: relative;
+}
+.bookmark .head h1::after{
+    content: '';
+    width: 265px;
+    height: 20px;
+    background-color: #FEc260;
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    z-index: -1;
+    transition: all .5s;
+}
+.bookmark .center-head .head h1:hover::after{
+    height: 40px;
+}
+.book-body{
+    border-width: 2px 0 2px 0;
+    border-style:dotted;
+}
+.bookmark .book-body h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+
+.box-content .box-head .circle_color span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.box-content .box-head .circle_color .span1{
+    background-color: #f15f5d;
+}
+.box-content .box-head .circle_color .span2{
+    background-color: #febe2e;
+}
+.box-content .box-head .circle_color .span3{
+    background-color: #4db748;
+}
+
+
+.box-content .pra1{
+    font-family: "Bree Serif", serif;
+    font-size: 21px;
+}
+
+.box-content .icon i{
+    color: #bb4120;
+    
+}
+.box-content .icon li{
+    font-size: 18px;
+    padding-top: 12px;
+}
+.box-content .icon .fa-regular{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+}
+.box-content{
+    width: 39% !important;
+}
+.box-content .icon span{
+    font-size: 20px;
+}
+.form-control:focus{
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #202123;
+    outline: 0;
+    /* box-shadow: 0  0 0 0.20rem rgb(250, 180, 68); */
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgb(255, 157, 0);
+}
+
+
