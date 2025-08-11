@@ -37,9 +37,17 @@ function displayWeb(){
             <tr>
                 <td>${i+1}</td>
                 <td>${websitelist[i].name}</td>
-                <td>${websitelist[i].url}</td>
                 <td>
-                    <button onclick="deleteItem(${i})" class="btn btn-warning">Delete</button>
+                    <button  class="btn text-muted btn-visit">
+                        <i class="fa-regular fa-eye"></i>
+                        <a href="${websitelist[i].url}">Visit</a>
+                    </button>
+                </td>
+                <td>
+                    <button onclick="deleteItem(${i})" class="btn btn-danger">
+                    <i class="fa-solid fa-trash"></i>
+                    Delete
+                    </button>
                 </td>
             </tr>
         `
@@ -84,7 +92,7 @@ function validationNmae(){
 
 function validation_url(){
     var url = bookURL.value;
-    var regex = /^(?!:\/\/)([a-zA-Z0-9-_]+\.)+[a-zA-Z]{2,6}$/;
+    var regex = /^(?:(?:http|https|ftp):\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-._~:/?#[\]@!$&'()*+,;=%]+$/;
     // var msg = document.getElementById("msg");
 
     if(regex.test(url) == true){
